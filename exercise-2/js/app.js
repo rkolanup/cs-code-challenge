@@ -29,11 +29,16 @@ var createNewTaskElement = function(taskString, arr) {
 };
 
 var addTask = function () {
-  var listItemName = taskInput.value || "New Item"
-  listItem = createNewTaskElement(listItemName)
-  incompleteTasksHolder.appendChild(listItem)
-  bindTaskEvents(listItem, taskCompleted)
-  taskInput.value = "";
+    if(taskInput.value ==="")
+        alert("Add Item is empty");
+    else{
+        var listItemName = taskInput.value 
+        listItem = createNewTaskElement(listItemName)
+        incompleteTasksHolder.appendChild(listItem)
+        bindTaskEvents(listItem, taskCompleted)
+        taskInput.value = "";
+    }
+  
 };
 
 var editTask = function () {
