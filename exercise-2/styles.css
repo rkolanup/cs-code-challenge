@@ -133,9 +133,18 @@ html body ul li.editMode label {
   display: none;
 }
 
-.add-display {
+.add-task {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#empty-item-alert {
+  background: #f8c2cc;
+  padding: 10px;
+  width: 95%;
+  display: none;
+  color: #8f0101;
 }
 
 @media only screen and (max-width: 375px) {
