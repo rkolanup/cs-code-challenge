@@ -8,13 +8,15 @@
       <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
       <link rel='stylesheet' type='text/css' href='styles.css'>
   </head>
-
   <body>
       <div class="container">
         <h3><b>Add Item</b></h3>
-        <div class="add-display">
+        <div class="add-task">
+          <p id="empty-item-alert"></p>
+          <div>
             <input id="new-task" type="text" autofocus>
             <button class="add" type="button"'>Add</button>
+          </div>            
         </div>
         <h3><b>Todo</b></h3>
         <ul id="incomplete-tasks">
