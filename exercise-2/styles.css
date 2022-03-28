@@ -88,7 +88,7 @@ html body p > button :hover {
 
 /* Task list */
 html body li {
-  overflow: hidden;
+  display: flex;
   padding: 20px 0px;
   border-bottom: 1px solid #eee;
 }
