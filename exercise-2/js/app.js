@@ -1,4 +1,3 @@
-const addButton = document.getElementsByTagName("button")[0];
 const incompleteTasksHolder = document.getElementById("incomplete-tasks");
 const completedTasksHolder = document.getElementById("completed-tasks");
 
@@ -41,6 +40,7 @@ const addTask = function () {
         taskInput.value = "";
     }
 };
+const addButton = document.getElementsByTagName("button")[0];
 addButton.addEventListener("click", addTask);
 
 const editTask = function () {
